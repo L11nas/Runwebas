@@ -1,0 +1,138 @@
+{
+  "planas": "Pradedančiojo bėgimo planas",
+  "trukme_savaitemis": 12,
+  "savaites": [
+    {
+      "savaite": 1,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 20 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Ėjimas/bėgimas 25 min (1 min bėgimas, 2 min ėjimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 20 min" }
+      ]
+    },
+    {
+      "savaite": 2,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 22 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Ėjimas/bėgimas 27 min (1.5 min bėgimas, 1.5 min ėjimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 22 min" }
+      ]
+    },
+    {
+      "savaite": 3,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 25 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Ėjimas/bėgimas 30 min (2 min bėgimas, 1 min ėjimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 25 min" }
+      ]
+    },
+    {
+      "savaite": 4,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 27 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Intervalai: 5x(1 min greitas bėgimas, 2 min lėtas bėgimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 30 min" }
+      ]
+    },
+    {
+      "savaite": 5,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 30 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Intervalai: 6x(1 min greitas bėgimas, 2 min lėtas bėgimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 32 min" }
+      ]
+    },
+    {
+      "savaite": 6,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 32 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Tempinis bėgimas: 20 min (10 min įprastas tempas, 10 min pagreitintas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 35 min" }
+      ]
+    },
+    {
+      "savaite": 7,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 35 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Intervalai: 7x(1 min greitas bėgimas, 1.5 min lėtas bėgimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 37 min" }
+      ]
+    },
+    {
+      "savaite": 8,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 37 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Tempinis bėgimas: 25 min (15 min įprastas tempas, 10 min pagreitintas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 40 min" }
+      ]
+    },
+    {
+      "savaite": 9,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 40 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Intervalai: 8x(1 min greitas bėgimas, 1.5 min lėtas bėgimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 42 min" }
+      ]
+    },
+    {
+      "savaite": 10,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 42 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Tempinis bėgimas: 30 min (20 min įprastas tempas, 10 min pagreitintas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 45 min" }
+      ]
+    },
+    {
+      "savaite": 11,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 45 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Intervalai: 6x(2 min greitas bėgimas, 2 min lėtas bėgimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 47 min" }
+      ]
+    },
+    {
+      "savaite": 12,
+      "treniruotes": [
+        { "diena": "Pirmadienis", "aprasymas": "Lengvas bėgimas 40 min" },
+        {
+          "diena": "Trečiadienis",
+          "aprasymas": "Tempinis bėgimas: 30 min (15 min įprastas tempas, 15 min pagreitintas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Lengvas bėgimas 50 min" }
+      ]
+    }
+  ]
+}

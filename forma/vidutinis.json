@@ -1,0 +1,201 @@
+{
+  "planas": "Vidutinio lygio bėgimo planas",
+  "trukme_savaitemis": 18,
+  "savaites": [
+    {
+      "savaite": 1,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 40 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 6x(400m greitas, 200m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 60 min" }
+      ]
+    },
+    {
+      "savaite": 2,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 35 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 6x(30 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 65 min" }
+      ]
+    },
+    {
+      "savaite": 3,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 45 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 8x(400m greitas, 200m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 70 min" }
+      ]
+    },
+    {
+      "savaite": 4,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 40 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 8x(30 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 75 min" }
+      ]
+    },
+    {
+      "savaite": 5,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 50 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 6x(600m greitas, 200m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 80 min" }
+      ]
+    },
+    {
+      "savaite": 6,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 45 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 8x(45 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 85 min" }
+      ]
+    },
+    {
+      "savaite": 7,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 55 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 8x(600m greitas, 200m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 90 min" }
+      ]
+    },
+    {
+      "savaite": 8,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 50 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 10x(45 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 95 min" }
+      ]
+    },
+    {
+      "savaite": 9,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 60 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 6x(800m greitas, 400m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 100 min" }
+      ]
+    },
+    {
+      "savaite": 10,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 55 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 12x(45 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 105 min" }
+      ]
+    },
+    {
+      "savaite": 11,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 65 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 8x(800m greitas, 400m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 110 min" }
+      ]
+    },
+    {
+      "savaite": 12,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 60 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 10x(60 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 115 min" }
+      ]
+    },
+    {
+      "savaite": 13,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 70 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 6x(1000m greitas, 400m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 120 min" }
+      ]
+    },
+    {
+      "savaite": 14,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 65 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 12x(60 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 125 min" }
+      ]
+    },
+    {
+      "savaite": 15,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 75 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 8x(1000m greitas, 400m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 130 min" }
+      ]
+    },
+    {
+      "savaite": 16,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Tempinis bėgimas 70 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Kalvų bėgimas: 15x(60 sek į kalną, lėtas nusileidimas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 135 min" }
+      ]
+    },
+    {
+      "savaite": 17,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 60 min" },
+        {
+          "diena": "Ketvirtadienis",
+          "aprasymas": "Intervalai: 6x(1000m greitas, 400m lėtas)"
+        },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 100 min" }
+      ]
+    },
+    {
+      "savaite": 18,
+      "treniruotes": [
+        { "diena": "Antradienis", "aprasymas": "Lengvas bėgimas 45 min" },
+        { "diena": "Ketvirtadienis", "aprasymas": "Tempinis bėgimas 30 min" },
+        { "diena": "Šeštadienis", "aprasymas": "Ilgas bėgimas 60 min" }
+      ]
+    }
+  ]
+}

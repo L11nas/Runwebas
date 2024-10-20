@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bėgimo plano generatorius</title>
+    <link rel="stylesheet" href="/forma/forma.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="home-button"
+        ><ion-icon name="home"></ion-icon
+      ></a>
+    </header>
+    <div class="container">
+      <h1>Bėgimo plano generatorius</h1>
+      <form id="planoForma">
+        <label for="savaites">Pasirinkite savaičių skaičių:</label>
+        <select id="savaites" required>
+          <option value="4">4 savaitės</option>
+          <option value="8">8 savaitės</option>
+          <option value="12">12 savaičių</option>
+          <option value="16">16 savaičių</option>
+          <option value="20">20 savaičių</option>
+          <option value="24">24 savaitės</option>
+        </select>
+
+        <label for="lygis">Pasirinkite savo lygį:</label>
+        <select id="lygis" required>
+          <option value="pradedantysis">Pradedantysis</option>
+          <option value="vidutinis">Vidutinis</option>
+          <option value="pazenges">Pažengęs</option>
+        </select>
+
+        <button type="button" onclick="generuotiPlana()">
+          Generuoti bėgimo planą
+        </button>
+      </form>
+
+      <div id="rezultatas"></div>
+    </div>
+    <button id="pdfMygtukas" style="display: none" onclick="eksportuotiIPDF()">
+      Išsaugoti PDF
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+    <script src="/forma/plan.js"></script>
+  </body>
+</html>

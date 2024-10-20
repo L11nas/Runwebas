@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forumas</title>
+    <link rel="stylesheet" href="forumas.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+          <li>
+            <a href="index.html"><ion-icon name="home"></ion-icon></a>
+          </li>
+          <li><a href="apie.html">Apie</a></li>
+          <li><a href="treniruotes.html">Treniruotės</a></li>
+          <li><a href="forumas.html">Forumas</a></li>
+          <li><a href="kontaktai.html">Kontaktai</a></li>
+        </ul>
+      </div>
+    </header>
+    <div>
+      <div class="forum-container"></div>
+      <div id="topics"></div>
+      <div class="new-topic">
+        <h1>Forumas</h1>
+        <h2>Pridėti naują temą</h2>
+        <textarea
+          id="newTopicContent"
+          placeholder="Įveskite savo temą čia"
+        ></textarea>
+        <button class="button" onclick="addTopic()">Pridėti</button>
+      </div>
+    </div>
+
+    <script>
+      //Hamburger menu perjungimo funkcija
+      function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+      }
+
+      // Funkcija naujai temai pridėti
+      function addTopic() {
+        const topicContent = document.getElementById('newTopicContent').value;
+        if (topicContent.trim() !== '') {
+          const topics = JSON.parse(localStorage.getItem('topics')) || [];
+          const newTopic = {
+            title: topicContent,
+            replies: [],
+          };
+          topics.push(newTopic);
+          localStorage.setItem('topics', JSON.stringify(topics));
+          document.getElementById('newTopicContent').value = '';
+          renderTopics();
+        } else {
+          alert('Prašome įvesti temą.');
+        }
+      }
+
+      // Funkcija atsakymui pridėti
+      function addReply(button) {
+        const replyText = button.previousElementSibling.value;
+        if (replyText.trim() !== '') {
+          const topics = JSON.parse(localStorage.getItem('topics')) || [];
+          const topicIndex = button
+            .closest('.topic')
+            .getAttribute('data-index');
+          topics[topicIndex].replies.push(replyText);
+          localStorage.setItem('topics', JSON.stringify(topics));
+          button.previousElementSibling.value = '';
+          renderTopics();
+        } else {
+          alert('Prašome įvesti atsakymą.');
+        }
+      }
+
+      // Funkcija atkurti ir rodyti temas
+      function renderTopics() {
+        const topicsDiv = document.getElementById('topics');
+        topicsDiv.innerHTML = ''; // Išvalome senus elementus
+        const topics = JSON.parse(localStorage.getItem('topics')) || [];
+        topics.forEach((topic, index) => {
+          const topicDiv = document.createElement('div');
+          topicDiv.className = 'topic';
+          topicDiv.setAttribute('data-index', index);
+          topicDiv.innerHTML = `
+            <h2>${topic.title}</h2>
+            <div class="replies">
+              ${topic.replies.map((reply) => `<div>${reply}</div>`).join('')}
+            </div>
+            <div class="new-reply">
+              <textarea placeholder="Įveskite savo atsakymą čia"></textarea>
+              <button class="button" onclick="addReply(this)">Pridėti atsakymą</button>
+            </div>
+          `;
+          topicsDiv.appendChild(topicDiv);
+        });
+      }
+
+      // Atkuria temas puslapio įkrovimo metu
+      window.onload = function () {
+        renderTopics();
+      };
+    </script>
+  </body>
+</html>

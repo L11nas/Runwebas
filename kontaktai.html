@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktai</title>
+    <link rel="stylesheet" href="/kontaktai.css" />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>  
+  
+</head>
+  <body>
+    <div class="wrapper">
+        <header>
+            <nav class="nav">
+              <div class="hamburger" id="hamburger">&#9776;</div>
+              <ul class="nav-menu" id="nav-menu">
+                           
+                <li>
+                  <a href="index.html"><ion-icon name="home"></ion-icon></a>
+                </li>
+                        <li><a href="apie.html">Apie</a></li>
+                        <li><a href="treniruotes.html">Treniruotės</a></li>
+                        <li><a href="forumas.html">Forumas</a></li>
+                        <li><a href="kontaktai.html">Kontaktai</a></li>
+                      </ul>
+                </nav>
+        </header>
+        <main class="content">
+            <h1>Susisiekite su manimi</h1>
+            <form id="contactForm" action="https://formspree.io/f/xrbggdzv"
+            method="POST">
+                <label for="name">Vardas:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">El.paštas</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Žinutė</label>
+                <textarea id="message" id="message" name="message" required></textarea>
+<button type="submit">Siųsti</button>
+<input type="hidden" name="_next" value="https://formspree.io/f/xrbggdzv">
+            </form>
+            
+        </main>
+        <footer>
+            <section class="media">
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.tiktok.com/explore" target="_blank">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                      </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+    <script>
+      document.getElementById('hamburger').onclick = function () {
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.toggle('active');
+      };
+      document
+  .getElementById('contactForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+    const form = event.target;
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        Accept: 'aplication/json',
+      },
+    })
+      .then(function (response) {
+        if (response.ok) {
+          alert('Žinutė sėkmingai išsiūsta');
+          form.reset();
+        } else {
+          alert('Įvyko klaida, pabandykite dar kartą');
+        }
+      })
+      .catch(function (error) {
+        alert('Įvyko klaida, pabandykite dar kartą');
+      });
+  });
+
+    </script>
+    
+  </body>
+</html>
