@@ -70,4 +70,4 @@ Jei norite prisidėti prie projekto, galite:
 
 Linas- [@LinkedIn](https://lt.linkedin.com/in/linas-ulevi%C4%8Dius-48366113b) - linaswebdev@gmail.com
 
-Projekto nuoroda: [https://github.com/jusu_vartotojo_vardas/jusu_projekto_pavadinimas](https://github.com/jusu_vartotojo_vardas/jusu_projekto_pavadinimas)
+Projekto nuoroda: [https://github.com/jusu_vartotojo_vardas/jusu_projekto_pavadinimas](https://github.com/L11nas/Runwebas.git)
