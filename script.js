@@ -6,6 +6,7 @@ gsap.to('.title-1', {
   repeat: 0,
   yoyo: false,
 });
+
 gsap.to('.title-2', {
   delay: 1,
   duration: 1,
@@ -91,48 +92,30 @@ gsap.from('.content p', {
   opacity: 0,
   ease: 'expo.inOut',
 });
+
 gsap.from('.content button', {
-  delay: 2.6,
-  duration: 2,
+  delay: 2,
+  duration: 1,
   y: 20,
-  opacity: 1,
+  opacity: 0,
   ease: 'expo.inOut',
+  clearProps: 'all', // Išvalo GSAP pridėtas savybes po animacijos
 });
 
 function toggleMenu() {
-  const nav = document.querySelector('.nav');
-  if (nav) {
-    nav.classList.toggle('active');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navMenu) {
+    navMenu.classList.toggle('active');
   } else {
-    console.error('Nav element not found');
+    console.error('Nav menu element not found');
   }
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.querySelector('.hamburger');
-  if (hamburger) {
-    hamburger.addEventListener('click', toggleMenu);
-  } else {
-    console.error('Hamburger element not found');
-  }
-
-  document.addEventListener('click', function (event) {
-    const nav = document.querySelector('.nav');
-    const hamburger = document.querySelector('.hamburger');
-    if (
-      nav &&
-      nav.classList.contains('active') &&
-      !nav.contains(event.target) &&
-      event.target !== hamburger
-    ) {
-      nav.classList.remove('active');
-    }
-  });
-});
 
 const getPlanButton = document.getElementById('getPlanButton');
 if (getPlanButton) {
   getPlanButton.addEventListener('click', function () {
     window.location.href = 'forma/forma.html';
   });
+} else {
+  console.error('Get plan button not found');
 }
