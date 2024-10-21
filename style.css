@@ -267,6 +267,7 @@ button:active {
     flex-direction: column;
     width: 100%;
     padding: 20px 0;
+position: absolute;
   }
 
   .nav-menu.active {
@@ -277,6 +278,8 @@ button:active {
     margin: 10px 0;
     text-align: center;
   }
+.hamburger{
+display: block;}
 
   @media only screen and (max-width: 376px) {
     .nav-menu li a {
