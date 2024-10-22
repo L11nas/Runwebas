@@ -228,6 +228,7 @@ button:active {
     font-weight: bold;
   }
   .wrapper {
+   
     background-size: cover;
   }
   .pattern {
@@ -245,24 +246,59 @@ button:active {
     left: 50%;
     z-index: 1;
   }
-}
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 2000;
+    cursor: pointer;
+    color: orangered;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1500;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
 
-.box-2 {
-  top: 70%;
-}
-.content button {
-  position: fixed;
-  right: 3em;
-  bottom: 4em;
-  z-index: 1;
-}
-.media ul li ion-icon {
-  font-size: 25px;
-}
+  .nav-menu li {
+    margin: 10px 0;
+  }
 
-.media ul li {
-  padding: 0 5px;
-}
+  .content p {
+    display: none;
+  }
+  .box-2 {
+    top: 70%;
+  }
+  .content button {
+    position: fixed;
+    right: 3em;
+    bottom: 4em;
+    z-index: 1;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
 
 @media only screen and (max-width: 376px) {
   .nav {
