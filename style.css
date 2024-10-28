@@ -299,55 +299,35 @@ button:active {
     text-align: center;
   }
 
-  @media only screen and (max-width: 365px) {
-    .nav-menu {
-      flex-direction: row;
-      width: 100%;
-    }
+  @media only screen and (min-width: 360px) {
     .nav {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-    .media ul li ion-icon {
-      font-size: 25px;
-      transition: transform 0.3s ease;
-    }
-    .media ul li {
-      padding: 0 8px;
+      flex-direction: row; /* Elementai išdėstyti eilėje */
     }
 
-    .title-1,
-    .title-2 {
-      font-size: 35px;
-      letter-spacing: 7px;
+    .nav-menu {
+      flex-direction: row; /* Elementai išdėstyti eilėje */
+      width: auto; /* Leiskite meniu pločiui automatiškai prisitaikyti */
     }
-    .title-1 {
-      left: 30%;
-      top: 30%;
+
+    .nav-menu li {
+      margin: 0 15px; /* Tarpas tarp nuorodų */
     }
-    .title-2 {
-      left: 60%;
+  }
+
+  /* Mobilioji versija, iki 360px */
+  @media only screen and (max-width: 359px) {
+    .nav {
+      flex-direction: column; /* Elementai išdėstyti stulpelyje */
+      align-items: flex-start; /* Kairėje pusėje */
     }
-    .runner img {
-      width: 100%;
-      position: relative;
-      top: -20px;
-      opacity: 0;
+
+    .nav-menu {
+      flex-direction: column; /* Elementai išdėstyti stulpelyje */
+      width: 100%; /* Palaiko 100% pločio */
     }
-    .content {
-      left: 65%;
-      width: 35%;
-    }
-    .content button {
-      padding: 15px 20px;
-      font-size: 12px;
-    }
-    .box-1,
-    .box-2,
-    .box-3 {
-      display: flex;
-      z-index: 0;
-      opacity: 1;
+
+    .nav-menu li {
+      margin: 10px 0; /* Tarpas tarp nuorodų stulpelyje */
     }
   }
 }
