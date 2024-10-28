@@ -29,10 +29,9 @@
         </ul>
       </div>
     </header>
-    <div>
-      <div class="forum-container"></div>
-      <div id="topics"></div>
-      <div class="new-topic">
+
+    <main>
+      <div class="forum-container">
         <h1>Forumas</h1>
         <h2>Pridėti naują temą</h2>
         <textarea
@@ -40,26 +39,24 @@
           placeholder="Įveskite savo temą čia"
         ></textarea>
         <button class="button" onclick="addTopic()">Pridėti</button>
+        <div id="topics"></div>
       </div>
-    </div>
+    </main>
 
     <script>
-      //Hamburger menu perjungimo funkcija
+      // Hamburger menu toggle function
       function toggleMenu() {
-        const menu = document.querySelector('.menu');
-        menu.classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('active');
       }
 
-      // Funkcija naujai temai pridėti
+      // Function to add a new topic
       function addTopic() {
-        const topicContent = document.getElementById('newTopicContent').value;
-        if (topicContent.trim() !== '') {
+        const topicContent = document
+          .getElementById('newTopicContent')
+          .value.trim();
+        if (topicContent) {
           const topics = JSON.parse(localStorage.getItem('topics')) || [];
-          const newTopic = {
-            title: topicContent,
-            replies: [],
-          };
-          topics.push(newTopic);
+          topics.push({ title: topicContent, replies: [] });
           localStorage.setItem('topics', JSON.stringify(topics));
           document.getElementById('newTopicContent').value = '';
           renderTopics();
@@ -68,10 +65,10 @@
         }
       }
 
-      // Funkcija atsakymui pridėti
+      // Function to add a reply to a topic
       function addReply(button) {
-        const replyText = button.previousElementSibling.value;
-        if (replyText.trim() !== '') {
+        const replyText = button.previousElementSibling.value.trim();
+        if (replyText) {
           const topics = JSON.parse(localStorage.getItem('topics')) || [];
           const topicIndex = button
             .closest('.topic')
@@ -85,33 +82,32 @@
         }
       }
 
-      // Funkcija atkurti ir rodyti temas
+      // Function to render topics on the page
       function renderTopics() {
         const topicsDiv = document.getElementById('topics');
-        topicsDiv.innerHTML = ''; // Išvalome senus elementus
+        topicsDiv.innerHTML = ''; // Clear existing topics
         const topics = JSON.parse(localStorage.getItem('topics')) || [];
+
         topics.forEach((topic, index) => {
           const topicDiv = document.createElement('div');
           topicDiv.className = 'topic';
           topicDiv.setAttribute('data-index', index);
           topicDiv.innerHTML = `
-            <h2>${topic.title}</h2>
-            <div class="replies">
-              ${topic.replies.map((reply) => `<div>${reply}</div>`).join('')}
-            </div>
-            <div class="new-reply">
-              <textarea placeholder="Įveskite savo atsakymą čia"></textarea>
-              <button class="button" onclick="addReply(this)">Pridėti atsakymą</button>
-            </div>
-          `;
+                    <h2>${topic.title}</h2>
+                    <div class="replies">${topic.replies
+                      .map((reply) => `<div>${reply}</div>`)
+                      .join('')}</div>
+                    <div class="new-reply">
+                        <textarea placeholder="Įveskite savo atsakymą čia"></textarea>
+                        <button class="button" onclick="addReply(this)">Pridėti atsakymą</button>
+                    </div>
+                `;
           topicsDiv.appendChild(topicDiv);
         });
       }
 
-      // Atkuria temas puslapio įkrovimo metu
-      window.onload = function () {
-        renderTopics();
-      };
+      // Restore topics on page load
+      window.onload = renderTopics;
     </script>
   </body>
 </html>

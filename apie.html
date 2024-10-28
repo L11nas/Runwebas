@@ -8,6 +8,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
+      rel="preconnect"
     />
     <script
       type="module"
@@ -33,7 +34,7 @@
         </ul>
       </nav>
     </header>
-    <div class="content">
+    <main class="content">
       <h1>Bėgimo plano generatorius</h1>
       <p>
         Tai įrankis, skirtas padėti visų lygių bėgikams pasiekti norimą bėgimo
@@ -46,12 +47,12 @@
         Kai naudojate generatorių, pirmiausia būsite paraginti įvesti dabartinį
         bėgimo lygį. Ši informacija padeda generatoriui nustatyti jūsų pradinį
         tašką ir sukurti sudėtingą, tačiau įgyvendinamą planą. Tada jūsų bus
-        paprašyta įvesti norimą laikotarpi, savaičių, kurias turite treniruotis,
+        paprašyta įvesti norimą laikotarpį, savaičių, kurias turite treniruotis,
         skaičių. Ši informacija leidžia generatoriui sudaryti treniruočių planą,
         kuriame atsižvelgiama į tai, kiek laiko turite tikslui pasiekti.
       </p>
       <p>
-        Be šios pagrindinės informacijos, bėgimo plano generatorius yra parinkes
+        Be šios pagrindinės informacijos, bėgimo plano generatorius yra parinkęs
         optimalų trijų treniruočių krūvį per savaitę. Ši informacija naudojama
         norint sudaryti tvarkaraštį, kuris atitinka jūsų esamus įsipareigojimus
         ir leidžia jums nustatyti mokymo prioritetus pagal jūsų poreikius.
@@ -70,16 +71,17 @@
         kūno rengybos tikslus. Nesvarbu, ar esate pradedantysis, ar patyręs
         bėgikas, generatorius gali padėti jums sukurti pritaikytą treniruočių
         planą, pritaikytą jūsų poreikiams ir tvarkaraščiui. Visada prieš
-        pradedant sportuoti būtina pasitikrinti sveikatą, ir gauti leidimą iš
-        šeimos gydytojo. Kiekvienas žmogus kuris sportuoja pagal sudarytą planą,
-        yra atsakingas už savo sveikatą.
+        pradedant sportuoti būtina pasitikrinti sveikatą ir gauti leidimą iš
+        šeimos gydytojo. Kiekvienas žmogus, kuris sportuoja pagal sudarytą
+        planą, yra atsakingas už savo sveikatą.
       </p>
-    </div>
+    </main>
     <script>
-      document.getElementById('hamburger').onclick = function () {
-        const navMenu = document.querySelector('.nav-menu');
-        navMenu.classList.toggle('active');
-      };
+      document
+        .getElementById('hamburger')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-menu').classList.toggle('active');
+        });
     </script>
   </body>
 </html>
