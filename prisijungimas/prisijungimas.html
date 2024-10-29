@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prisijungimas</title>
+    <link rel="stylesheet" href="prisijungimas.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="form-container">
+        <form id="loginForm">
+          <h2>Prisijunkite</h2>
+          <input type="email" placeholder="El. paštas" required />
+          <input type="password" placeholder="Slaptažodis" required />
+          <button type="submit">Prisijungti</button>
+          <p>
+            Neturi paskyros?<a href="#" id="switchToRegister"
+              >Registruokitės čia</a
+            >
+          </p>
+        </form>
+
+        <form id="registerForm" style="display: none">
+          <h2>Registracija</h2>
+          <input type="text" placeholder="Vardas" required />
+          <input type="email" placeholder="El. paštas" required />
+          <input type="password" placeholder="Slaptažodis" required />
+          <button type="submit">Registruotis</button>
+          <p>Jau turite paskyrą?</p>
+          <a href="#" id="switchToLogin">Prisijunkite čia</a>
+        </form>
+      </div>
+    </div>
+    <script src="prisijungimas.js"></script>
+  </body>
+</html>
