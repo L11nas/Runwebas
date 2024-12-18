@@ -48,6 +48,8 @@ p {
 }
 .auth-button {
   /* Pagrindinis mygtuko dizainas */
+  display: block;
+  margin: 0 auto;
   padding: 10px;
   background-color: orangered;
   color: white;
@@ -62,15 +64,21 @@ p {
 
 /* Pakeisk mygtuko poziciją mažesniems ekranams */
 @media (max-width: 480px) {
-  .auth-button {
-    margin-top: 20px; /* Pridedame tarpelį viršuje */
-    font-size: 14px;
+  .auth-container {
+    display: flex;
+    flex-direction: column; /* Vertikali orientacija */
+    align-items: center; /* Horizontalus centras */
+    justify-content: center; /* Vertikalus centras */
+    height: 100vh; /* Užtikrina, kad viskas būtų per visą ekraną */
   }
 }
 
 @media (max-width: 360px) {
   .auth-button {
-    font-size: 12px; /* Sumažiname teksto dydį */
+    font-size: 10px; /* Sumažiname teksto dydį */
     padding: 8px; /* Sumažiname mygtuko dydį */
+  }
+  .auth-button {
+    margin-top: 20px; /* Tarpas nuo kitų elementų viršuje */
   }
 }
