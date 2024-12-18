@@ -46,10 +46,7 @@ button:hover {
 p {
   text-align: center;
 }
-.auth-button {
-  /* Pagrindinis mygtuko dizainas */
-  display: block;
-  margin: 0 auto;
+* General button styling */ .auth-button {
   padding: 10px;
   background-color: orangered;
   color: white;
@@ -62,23 +59,23 @@ p {
   background-color: darkorange;
 }
 
-/* Pakeisk mygtuko poziciją mažesniems ekranams */
+/* Responsive adjustments for screens up to 480px wide */
 @media (max-width: 480px) {
   .auth-container {
-    display: flex;
-    flex-direction: column; /* Vertikali orientacija */
-    align-items: center; /* Horizontalus centras */
-    justify-content: center; /* Vertikalus centras */
-    height: 100vh; /* Užtikrina, kad viskas būtų per visą ekraną */
+    margin: 20px;
+    width: auto;
+  }
+
+  .auth-button {
+    margin-top: 20px; /* Adds space above the button */
+    font-size: 14px;
   }
 }
 
+/* Further adjustments for screens up to 360px wide */
 @media (max-width: 360px) {
   .auth-button {
-    font-size: 10px; /* Sumažiname teksto dydį */
-    padding: 8px; /* Sumažiname mygtuko dydį */
-  }
-  .auth-button {
-    margin-top: 20px; /* Tarpas nuo kitų elementų viršuje */
+    font-size: 12px; /* Reduces text size */
+    padding: 8px; /* Reduces button size */
   }
 }
