@@ -45,3 +45,12 @@ button:hover {
 p {
   text-align: center;
 }
+@media (max-width: 768px) {
+  button {
+    margin-top: 20px; /* Padidina atstumą viršuje */
+  }
+
+  .auth-container {
+    margin: 30px 20px; /* Padidina tarpą viršuje ir šonuose */
+  }
+}
