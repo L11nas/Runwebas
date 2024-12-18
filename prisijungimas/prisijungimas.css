@@ -12,7 +12,7 @@ body {
   background: white;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 200px;
   margin: 60px;
   width: 300px;
   background-color: rgb(237, 232, 232);
@@ -32,50 +32,38 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: orangered;
-  color: white;
-  cursor: pointer;
-}
+
 button:hover {
   background-color: darkorange;
 }
 p {
   text-align: center;
 }
-* General button styling */ .auth-button {
+.auth-button {
   padding: 10px;
   background-color: orangered;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
 .auth-button:hover {
   background-color: darkorange;
 }
 
-/* Responsive adjustments for screens up to 480px wide */
 @media (max-width: 480px) {
-  .auth-container {
-    margin: 20px;
-    width: auto;
-  }
-
   .auth-button {
-    margin-top: 20px; /* Adds space above the button */
     font-size: 14px;
+    padding: 10px;
   }
 }
 
-/* Further adjustments for screens up to 360px wide */
 @media (max-width: 360px) {
   .auth-button {
-    font-size: 12px; /* Reduces text size */
-    padding: 8px; /* Reduces button size */
+    font-size: 12px;
+    padding: 8px;
   }
 }
