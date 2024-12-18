@@ -172,7 +172,7 @@ body {
   border: none;
   border-radius: 12px; /* Apvalūs kampai */
   padding: 10px 20px; /* Tarpai aplink tekstą */
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -181,7 +181,7 @@ body {
   transition: background-color 0.3s;
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 40px;
 }
 
 .running-shoe-button::before {
