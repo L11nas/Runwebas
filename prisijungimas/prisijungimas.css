@@ -20,6 +20,7 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 form {
   display: flex;
@@ -45,12 +46,31 @@ button:hover {
 p {
   text-align: center;
 }
-@media (max-width: 768px) {
-  button {
-    margin-top: 20px; /* Padidina atstumą viršuje */
-  }
+.auth-button {
+  /* Pagrindinis mygtuko dizainas */
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .auth-container {
-    margin: 30px 20px; /* Padidina tarpą viršuje ir šonuose */
+.auth-button:hover {
+  background-color: darkorange;
+}
+
+/* Pakeisk mygtuko poziciją mažesniems ekranams */
+@media (max-width: 480px) {
+  .auth-button {
+    margin-top: 20px; /* Pridedame tarpelį viršuje */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .auth-button {
+    font-size: 12px; /* Sumažiname teksto dydį */
+    padding: 8px; /* Sumažiname mygtuko dydį */
   }
 }
