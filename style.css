@@ -189,10 +189,10 @@ body {
   background-image: url('img/running.webp'); /* Įkelkite savo bėgimo batelio ikoną */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 24px; /* Ikonos plotis */
-  height: 24px; /* Ikonos aukštis */
+  width: 20px; /* Ikonos plotis */
+  height: 20px; /* Ikonos aukštis */
   position: absolute;
-  left: 10px; /* Atstumas nuo kairio krašto */
+  left: -1px; /* Atstumas nuo kairio krašto */
 }
 
 .running-shoe-button:hover {
