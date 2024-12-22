@@ -170,7 +170,7 @@ body {
   background-color: #e0e0e0; /* Pagrindinė mygtuko spalva */
   color: #333; /* Teksto spalva */
   border: none;
-  border-radius: 12px; /* Apvalūs kampai */
+  border-radius: 12px; 
   padding: 10px 20px; /* Tarpai aplink tekstą */
   font-size: 12px;
   font-weight: bold;
@@ -186,7 +186,7 @@ body {
 
 .running-shoe-button::before {
   content: '';
-  background-image: url('img/running.webp'); /* Įkelkite savo bėgimo batelio ikoną */
+  background-image: url('img/running.webp'); 
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px; /* Ikonos plotis */
@@ -335,33 +335,33 @@ button:active {
 
   @media only screen and (min-width: 360px) {
     .nav {
-      flex-direction: row; /* Elementai išdėstyti eilėje */
+      flex-direction: row; 
     }
 
     .nav-menu {
-      flex-direction: row; /* Elementai išdėstyti eilėje */
-      width: auto; /* Leiskite meniu pločiui automatiškai prisitaikyti */
+      flex-direction: row; 
+      width: auto;
     }
 
     .nav-menu li {
-      margin: 0 15px; /* Tarpas tarp nuorodų */
+      margin: 0 15px; 
     }
   }
 
-  /* Mobilioji versija, iki 360px */
+ 
   @media only screen and (max-width: 359px) {
     .nav {
-      flex-direction: column; /* Elementai išdėstyti stulpelyje */
-      align-items: flex-start; /* Kairėje pusėje */
+      flex-direction: column; 
+      align-items: flex-start; 
     }
 
     .nav-menu {
-      flex-direction: column; /* Elementai išdėstyti stulpelyje */
-      width: 100%; /* Palaiko 100% pločio */
+      flex-direction: column; 
+      width: 100%; 
     }
 
     .nav-menu li {
-      margin: 10px 0; /* Tarpas tarp nuorodų stulpelyje */
+      margin: 10px 0; 
     }
   }
 }
